@@ -1,0 +1,11 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.5865">
+<testsuite name="demoQA.spec.ts" timestamp="2026-08-27T06:55:33.673Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.743" errors="0">
+<testcase name="Automation Practice Form Test" classname="demoQA.spec.ts" time="11.743">
+<system-out>
+<![CDATA[Executing Automation Practice Form Test
+Form submitted successfully and screenshot attached to report
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
