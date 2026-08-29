@@ -1,0 +1,25 @@
+{
+  "name": "playwright-jenkins-demo",
+  "version": "1.0.0",
+  "description": "Playwright Automation Test Framework integrated with Jenkins Freestyle project",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "playwright test --reporter=line,junit,html",
+    "test:headed": "playwright test --headed",
+    "show-report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "jenkins",
+    "testing",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  }
+}
