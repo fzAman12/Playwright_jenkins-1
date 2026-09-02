@@ -1,0 +1,14 @@
+node(windows) {
+
+    stage('Checkout') {
+        git branch: 'main',
+            url: 'https://github.com/chaitanyabollapu/Playwright_jenkins.git'
+    }
+    stage('Install Dependencies') {
+        bat 'npm ci'
+    }
+    stage('Run Playwright Tests') {
+        bat 'npx playwright test'
+    }
+
+}
