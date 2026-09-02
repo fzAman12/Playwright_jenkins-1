@@ -4,9 +4,15 @@ node {
         git branch: 'main',
             url: 'https://github.com/chaitanyabollapu/Playwright_jenkins.git'
     }
+
     stage('Install Dependencies') {
         bat 'npm ci'
     }
+
+    stage('Install Playwright Browsers') {
+        bat 'npx playwright install chromium'
+    }
+
     stage('Run Playwright Tests') {
         bat 'npx playwright test'
     }
