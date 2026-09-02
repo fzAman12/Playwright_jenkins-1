@@ -1,4 +1,4 @@
-node(windows) {
+node {
 
     stage('Checkout') {
         git branch: 'main',
